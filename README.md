@@ -22,8 +22,29 @@ The features in the dataset are as follows
 - Here in the dataset there were neither missing values nor outliers that needs to be handled
 - There were no categorical coloumns that are needed to be encoded
 - Performed the correlation between all the features to find if there any positive or negative correlation, but there is no correlation
- across all the variables. Even the target variable is not having any correlation with any other variable which doesnot help most of the models to find patterns in the data.
-- (Tried various data transformations such as log transformations and exponential transformations to see if it improves the correlation but didnot find any improvement) not included this in the notebook.
-- As there is no correlation among independent features considering dimensionality reduction is not a choice.
+ across all the variables. Even the target variable is not having any correlation with any other variable which doesnot help most of the models to find patterns in the data. So i couldnot perform the feature selection.
+- **(Tried various data transformations such as log transformations and exponential transformations to see if it improves the correlation but didnot find any improvement) not included this in the notebook.**
+- **As there is no correlation among independent features considering dimensionality reduction is not a choice.**
+- Splitted the dataset considering 75% of the data for training and 25% of the data for testing.
 
-# Splitting the Dataset
+# Model Selection and training
+
+- Choosen Random forest regressor and support vector regressor as there is no linear relationship in the data.
+- Choosen MSE, RMSE, R square, Adjusted R square for evaluating the model.
+- Here both the models failed to predict the testing dataset. out of both SVR has got low Mean Squared Error.
+
+# Hyperparameter tuning
+
+- Considered the above mentioned algorithms with some parameters using GridSearchCV and Cross validation fould out the best models
+- Using those parameters tried fitting models once again but it didnot improve the results.
+
+# Conclusion
+
+- In this project i tried to build a ML model which is capable of predicting the selling price of a house. 
+- But the data seems to be not accurate as any of the features are not showing impact of the output variable.
+- Improving the data quality or by adding additional data might help the model to understand the underlying patterns.
+
+# Future Scope
+
+- Will try to re-check if there is any underlying patterns in the data by exploring transformations during feature engineering.
+- Will try to implement this use case using Artificial Neural Networks and explore if it improves predictions
