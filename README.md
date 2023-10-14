@@ -10,8 +10,8 @@ The features in the dataset are as follows
 3. GrLivArea: It represents the living room area in the house
 4. YearBuilt: It represents in which year the house is constructed 
 5. TotalBsmtSF: It represents the total area of the house
-6. FullBath: It represents the number of bathrooms
-7. HalfBath: It represents the number of semi bathrooms
+6. FullBath: It represents the number of washrooms
+7. HalfBath: It represents the number of semi washrooms
 8. GarageCars: It represents how many cars will fit in garage
 9. GarageArea: It represents the area of the garage
 10. SalePrice: It represents the selling price of the house and it is the target variable 
@@ -35,7 +35,7 @@ The features in the dataset are as follows
 
 # Hyperparameter tuning
 
-- Considered the above mentioned algorithms with some parameters using GridSearchCV and Cross validation fould out the best models
+- Considered the above mentioned algorithms with some parameters using GridSearchCV and Cross validation and found out the best parameters
 - Using those parameters tried fitting models once again but it didnot improve the results.
 
 # Conclusion
